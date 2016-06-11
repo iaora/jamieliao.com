@@ -1,0 +1,56 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+
+p,h1,ul{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1{
+  display: inline-block;
+  left: 50%;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  padding: 8px 0 8px 16px;
+  text-decoration: none;
+  background-color: #f1f1f1;
+  width: 200px;
+  float: right;
+  font-size: 20px;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 0 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #78B1C4;
+  color: white;
+}
+
+$(document).ready(function(){
+  $('#logo').each(function() {
+    animationClick(this, 'bounce');
+  });
+});
+
+.col-left{
+  float: left;
+  width: 25%;
+}
+.col-right{
+  float: right;
+  width: 25%;
+}
+.col-center{
+  display: inline-block;
+  width: 25%;
+}
