@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  if (location.href == "file:///home/jamie/School/Projects/iaora.github.io/index.html" || location.href == "http://iaora.github.io/"){
+  if (location.hash == ''){
     $('#name').addClass('animated fadeInLeft');
     $('#frontabout').addClass('animated fadeInUp');
     $('#frontprojects').addClass('animated fadeInUp');
