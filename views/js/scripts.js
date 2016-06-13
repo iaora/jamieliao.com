@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
-  animationClick('#name', 'zoomIn');
+  animationClick('#name', 'tada');
+  animationClick('#about', 'tada');
+  animationClick('#projects', 'tada');
+  animationClick('#experience', 'tada');
 
   function animationClick(element, animation){
     element = $(element);

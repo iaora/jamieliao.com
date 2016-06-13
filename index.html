@@ -2,25 +2,27 @@
 <head>
   <link href="views/style.css" rel="stylesheet">
   <link rel="stylesheet" href="views/css/animate.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="views/js/scripts.js"></script>
 </head>
 
 <div class="navbar nav-bar default" id="navbar">
   <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
+    <li><a id="about" href="#about">About</a></li>
+    <li><a id="projects" href="#projects">Projects</a></li>
+    <li><a id="experience" href="#experience">Experience</a></li>
     <li><a href="views/resume.pdf">Resume</a></li>
   </ul>
 </div>
 
 <body data-spy="scroll" data-target="#navbar">
-  <div id="name">
-    <h1>Jamie Liao</h1>
-    <script>
-      animationClick(this, 'zoomIn');
-    </script>
+  <div class="hea">
+    <div id="name">
+      <img src="views/images/name.png" class="center">
+      <script>animationClick('#name', 'tada');</script>
+    </div>
   </div>
-  <div class="row">
+  <div class="row" id="col">
     <div class="col-left">
       <p>First column</p>
     </div>

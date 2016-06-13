@@ -36,21 +36,20 @@ li a:hover {
   color: white;
 }
 
-$(document).ready(function(){
-  $('#logo').each(function() {
-    animationClick(this, 'bounce');
-  });
-});
+.hea{
+  padding-left: 50px;
+}
+
 
 .col-left{
   float: left;
-  width: 25%;
+  width: 24%;
 }
 .col-right{
   float: right;
-  width: 25%;
+  width: 24%;
 }
 .col-center{
   display: inline-block;
-  width: 25%;
+  width: 24%;
 }
