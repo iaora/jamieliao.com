@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
-  animationClick('#name', 'tada');
+  if (location.log == "http://iaora.github.io/"){
+    $('#name').addClass('animated bounceIn');
+  }
+
   animationClick('#about', 'tada');
   animationClick('#projects', 'tada');
   animationClick('#experience', 'tada');
