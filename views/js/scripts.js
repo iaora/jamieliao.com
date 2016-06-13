@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  if (location.log == "http://iaora.github.io/"){
+  if (location.href == "http://iaora.github.io/"){
     $('#name').addClass('animated bounceIn');
   }
 
