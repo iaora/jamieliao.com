@@ -14,6 +14,8 @@ $(document).ready(function(){
         window.setTimeout( function(){
           element.removeClass('animated ' + animation);
         }, 2000);
-      });
-  }
-)};
+      }
+    );
+  };
+
+});
