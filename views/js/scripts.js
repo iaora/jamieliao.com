@@ -1,14 +1,22 @@
 $(document).ready(function(){
 
-  if (location.href == "http://iaora.github.io/"){
+  if (location.href == "file:///home/jamie/School/Projects/iaora.github.io/index.html"){
     $('#name').addClass('animated fadeInLeft');
+    $('#frontabout').addClass('animated fadeInUp');
+    $('#frontprojects').addClass('animated fadeInUp');
+    $('#frontexperience').addClass('animated fadeInUp');
+    $('#frontresume').addClass('animated fadeInUp');
   }else{
-    $('#name').addClass('animated fadeOutLeft');
-
-    $('navbar').addClass('animated  fadeInRight');
+    $('#name').addClass('animated fadeOutRight');
+    $('#frontabout').addClass('animated fadeOutDown');
+    $('#frontprojects').addClass('animated fadeOutDown');
+    $('#frontexperience').addClass('animated fadeOutDown');
+    $('#frontresume').addClass('animated fadeOutDown');
+    
+    $('#navbar').delay(800).css('display', 'initial');
+    $('#navbar').delay(900).addClass('animated fadeInRight');
   }
-
-
+  
 
 
   function animationHover(element, animation){

@@ -3,13 +3,12 @@
   src: url(sansation_light.woff);
 }
 
-p,h1,ul{
+p,h1,ul, .frontabout, .frontprojects, .frontexperience, .frontresume{
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-h1{
-  display: inline-block;
-  left: 50%;
+.navbar{
+  display: none;
 }
 
 ul {
@@ -36,9 +35,44 @@ li a:hover {
   color: white;
 }
 
-.hea{
-  padding-left: 50px;
-  width: 50%;
+/* Front Page */
+
+.name{
+  visibility: visible;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 100px;
+  width: 100%;
+  color: #78B1C4;
+}
+
+a.frontabout, a.frontprojects, a.frontexperience{
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  padding: 8px 0 8px 16px;
+  color: initial;
+  float: left;
+  width: 10%;
+}
+
+.frontabout:hover, .frontprojects:hover, .frontexperience:hover , .frontresume:hover{
+  padding: 8px 0 8px 16px;
+  background-color: #78B1C4;
+  color: white;
+  width: 10%;
+}
+
+.frontresume{
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  padding: 8px 0 8px 16px;
+  color: initial;
+  width: 5%;
+  float: right;
 }
 
 

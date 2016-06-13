@@ -6,7 +6,7 @@
   <script src="views/js/scripts.js"></script>
 </head>
 
-<div id="navbar">
+<div class="navbar" id="navbar">
   <ul>
     <li><a id="about" href="#about">About</a></li>
     <li><a id="projects" href="#projects">Projects</a></li>
@@ -15,22 +15,18 @@
   </ul>
 </div>
 
+<!-- Home Page -->
 <body data-spy="scroll" data-target="#navbar">
   <div class="hea">
-    <div id="name">
-      <img src="views/images/name.png" class="center">
+    <div class="name" id="name">
+      <h1>Jamie Liao<h1>
     </div>
   </div>
   <div class="row" id="col">
-    <div class="col-left">
-      <p>First column</p>
-    </div>
-    <div class="col-center">
-      <p>First column</p>
-    </div>
-    <div class="col-right">
-      <p>First column</p>
-    </div>
+    <a href="#about" class="frontabout" id="frontabout" onClick="location.reload();">About</a>
+    <a href="#projects" class="frontprojects" id="frontprojects"  onClick="location.reload();">Projects</a>
+    <a href="#experience" class="frontexperience" id="frontexperience"onClick="location.reload();">Experience</a>
+    <h2><a href="views/resume.pdf" class="frontresume" id="frontresume" >Resume</a></h2>
   </div>
 
 </body>
