@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  if (location.href == "iaora.github.io/"){
+  if (location.href == "http://iaora.github.io/"){
     $('#name').addClass('animated fadeInLeft');
   }else{
     $('#name').addClass('animated fadeOutLeft');
