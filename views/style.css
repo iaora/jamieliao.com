@@ -7,7 +7,7 @@ p,h1,ul, .frontabout, .frontprojects, .frontexperience, .frontresume{
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.navbar{
+.navbar bar{
   display: none;
 }
 
@@ -38,7 +38,7 @@ li a:hover {
 /* Front Page */
 
 .name{
-  visibility: visible;
+  display:: inline;
   text-align: center;
   font-size: 50px;
   padding-top: 100px;
@@ -49,6 +49,7 @@ li a:hover {
 a.frontabout, a.frontprojects, a.frontexperience{
   -webkit-appearance: button;
   -moz-appearance: button;
+    </div>
   appearance: button;
   text-decoration: none;
   padding: 8px 0 8px 16px;
@@ -71,7 +72,7 @@ a.frontabout, a.frontprojects, a.frontexperience{
   text-decoration: none;
   padding: 8px 0 8px 16px;
   color: initial;
-  width: 5%;
+  width: 10%;
   float: right;
 }
 
@@ -87,4 +88,16 @@ a.frontabout, a.frontprojects, a.frontexperience{
 .col-center{
   display: inline-block;
   width: 24%;
+}
+
+.about{
+  display: none;
+}
+
+.projects{
+  display: none;
+}
+
+.experience{
+  display: none;
 }

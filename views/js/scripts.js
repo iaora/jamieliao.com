@@ -1,22 +1,28 @@
 $(document).ready(function(){
 
+  var hash;
+
   if (location.hash == ''){
     $('#name').addClass('animated fadeInLeft');
     $('#frontabout').addClass('animated fadeInUp');
     $('#frontprojects').addClass('animated fadeInUp');
     $('#frontexperience').addClass('animated fadeInUp');
     $('#frontresume').addClass('animated fadeInUp');
-  }else{
-    $('#name').addClass('animated fadeOutRight');
-    $('#frontabout').addClass('animated fadeOutDown');
-    $('#frontprojects').addClass('animated fadeOutDown');
-    $('#frontexperience').addClass('animated fadeOutDown');
-    $('#frontresume').addClass('animated fadeOutDown');
-    
-    $('#navbar').delay(800).css('display', 'initial');
-    $('#navbar').delay(900).addClass('animated fadeInRight');
   }
-  
+
+
+  if(location.hash == "#about"){
+    console.log("hi");
+    setTimeout(function() {
+      $('#about').css('display', 'block');
+      $('#about').addClass('animated fadeInRight');
+    }, 0);
+  }else if(location.hash == "projects"){
+
+  }else if(location.hash == "#experience"){
+
+  }else{}
+ 
 
 
   function animationHover(element, animation){
@@ -48,3 +54,21 @@ $(document).ready(function(){
   };
 
 });
+  
+function moveMain(){
+    $('#name').removeClass('fadeInLeft').addClass('animated fadeOutRight');
+    $('#row').addClass('animated fadeOutDown');
+    //$('#frontprojects').addClass('animated fadeOutDown');
+    //$('#frontexperience').addClass('animated fadeOutDown');
+    //$('#frontresume').addClass('animated fadeOutDown');
+
+    setTimeout(function() {
+      $('#bar').css('display', 'block');
+      $('#navbar').addClass('animated fadeInRight');
+    }, 0);
+    
+    setTimeout(function(){
+      $('#name').css('display', 'none');
+      $('#row').css('display', 'none');
+    }, 700);
+};

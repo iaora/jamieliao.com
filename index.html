@@ -6,13 +6,15 @@
   <script src="views/js/scripts.js"></script>
 </head>
 
-<div class="navbar" id="navbar">
-  <ul>
-    <li><a id="about" href="#about">About</a></li>
-    <li><a id="projects" href="#projects">Projects</a></li>
-    <li><a id="experience" href="#experience">Experience</a></li>
-    <li><a href="views/resume.pdf">Resume</a></li>
-  </ul>
+<div class="navbar bar" id="bar">
+  <div id="navbar">
+    <ul>
+      <li><a href="#about" class="btnActive">About</a></li>
+      <li><a href="#projects" class="btnActive">Projects</a></li>
+      <li><a href="#experience" class="btnActive">Experience</a></li>
+      <li><a href="views/resume.pdf">Resume</a></li>
+    </ul>
+  </div>
 </div>
 
 <!-- Home Page -->
@@ -22,11 +24,28 @@
       <h1>Jamie Liao<h1>
     </div>
   </div>
-  <div class="row" id="col">
-    <a href="#about" class="frontabout" id="frontabout" onClick="location.reload();">About</a>
-    <a href="#projects" class="frontprojects" id="frontprojects"  onClick="location.reload();">Projects</a>
-    <a href="#experience" class="frontexperience" id="frontexperience"onClick="location.reload();">Experience</a>
+  <div class="row" id="row">
+    <a href="#about" class="frontabout" id="frontabout" onClick="moveMain();">About</a>
+    <a href="#projects" class="frontprojects" id="frontprojects"  onClick="moveMain;">Projects</a>
+    <a href="#experience" class="frontexperience" id="frontexperience"onClick="moveMain();">Experience</a>
     <h2><a href="views/resume.pdf" class="frontresume" id="frontresume" >Resume</a></h2>
+  </div>
+
+  <!-- About -->
+  <div class="about" id="about">
+    <p>THIS IS ABOUT</p>
+  </div>
+
+  <!-- Projects -- >
+  <div class="about" id="projects">
+    <p>THIS IS PROJECTS</p>
+
+  </div>
+
+  <!-- Experience -->
+  <div class="about" id="experience">
+    <p>THIS IS EXPERIENCE</p>
+    
   </div>
 
 </body>
