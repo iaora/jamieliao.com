@@ -3,12 +3,17 @@
   src: url(sansation_light.woff);
 }
 
-p,h1,ul, .frontabout, .frontprojects, .frontexperience, .frontresume{
+p,h1,ul, .frontabout, .frontprojects, .frontexperience, .frontresume, .about, .projects, .experience{
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.navbar bar{
+body { 
+  background-size:cover;
+}
+
+.bar{
   display: none;
+  z-index: 900;
 }
 
 ul {
@@ -37,61 +42,50 @@ li a:hover {
 
 /* Front Page */
 
-.name{
+.name h1{
   display:: inline;
   text-align: center;
-  font-size: 50px;
-  padding-top: 100px;
+  font-size: 100px !important;
+  margin-top: 250px;
+  margin-bottom: 75px;
   width: 100%;
-  color: #78B1C4;
+  color: #FFFFFF;  /*78B1C4;*/
 }
 
-a.frontabout, a.frontprojects, a.frontexperience{
-  -webkit-appearance: button;
-  -moz-appearance: button;
-    </div>
-  appearance: button;
-  text-decoration: none;
+.btn btn-lg btn-default:hover{
   padding: 8px 0 8px 16px;
-  color: initial;
-  float: left;
-  width: 10%;
-}
-
-.frontabout:hover, .frontprojects:hover, .frontexperience:hover , .frontresume:hover{
-  padding: 8px 0 8px 16px;
-  background-color: #78B1C4;
+  background-color: #78B1C4 !important;
   color: white;
   width: 10%;
 }
 
-.frontresume{
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-  text-decoration: none;
-  padding: 8px 0 8px 16px;
-  color: initial;
-  width: 10%;
-  float: right;
-}
 
 
-.col-left{
-  float: left;
-  width: 24%;
-}
-.col-right{
-  float: right;
-  width: 24%;
-}
-.col-center{
-  display: inline-block;
-  width: 24%;
-}
-
-.about{
+.about, .projects, .experience{
   display: none;
+  padding-left: 50px;
+  padding-top: 5px;
+  font-size: 20px;
+  width: 75%;
+}
+.about h1, .projects h1, .experience h1{
+  font-size: 60px;
+  color: #78B1C4;
+  width: 25%;
+}
+
+.about h1, .about p, .projects p, .projects h1, .experience h1, .experience p{
+  background-color: #F6F6F6;
+}
+
+.about img{
+  width: 4%;
+  height: auto;
+}
+
+.projects img{
+  width: 4%;
+  height: auto;
 }
 
 .projects{

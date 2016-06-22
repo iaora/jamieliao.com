@@ -4,46 +4,55 @@
   <link rel="stylesheet" href="views/css/animate.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="views/js/scripts.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 
-<div class="navbar bar" id="bar">
+<div class="bar" id="bar">
   <div id="navbar">
     <ul>
-      <li><a href="#about" class="btnActive">About</a></li>
-      <li><a href="#projects" class="btnActive">Projects</a></li>
-      <li><a href="#experience" class="btnActive">Experience</a></li>
+      <li><a href="#about" class="btnActive" onClick="loadAbout();">About</a></li>
+      <li><a href="#projects" class="btnActive" onClick="loadProjects();">Projects</a></li>
+      <li><a href="#experience" class="btnActive" onClick="loadExperience();">Experience</a></li>
       <li><a href="views/resume.pdf">Resume</a></li>
     </ul>
   </div>
 </div>
 
 <!-- Home Page -->
-<body data-spy="scroll" data-target="#navbar">
-  <div class="hea">
-    <div class="name" id="name">
-      <h1>Jamie Liao<h1>
-    </div>
+<body data-spy="scroll" data-target="#navbar" background="views/images/background.png">
+  <div class="name" id="name">
+    <h1>Jamie Liao</h1>
   </div>
   <div class="row" id="row">
-    <a href="#about" class="frontabout" id="frontabout" onClick="moveMain();">About</a>
-    <a href="#projects" class="frontprojects" id="frontprojects"  onClick="moveMain;">Projects</a>
-    <a href="#experience" class="frontexperience" id="frontexperience"onClick="moveMain();">Experience</a>
-    <h2><a href="views/resume.pdf" class="frontresume" id="frontresume" >Resume</a></h2>
+    <a href="#about" class="btn btn-lg btn-default" id="frontabout" onClick="moveMain(); loadAbout();" style="margin-left: 33%;">About</a>
+    <a href="#projects" class="btn btn-lg btn-default" id="frontprojects"  onClick="moveMain(); loadProjects();" style="margin-left: 75px;">Projects</a>
+    <a href="#experience" class="btn btn-lg btn-default" id="frontexperience"onClick="moveMain(); loadExperience();" style="margin-left: 75px; margin-right: 75px;">Experience</a>
+    <a href="views/resume.pdf" class="btn btn-lg btn-default" id="frontresume" >Resume</a>
   </div>
-
+  
   <!-- About -->
   <div class="about" id="about">
-    <p>THIS IS ABOUT</p>
+    <h1>About Me</h1>
+    <p>Hi! My name is Jamie Liao and I'm currently a junior at Rutgers University-New Brunswick studying Computer Science.</p>
+    <a href="https://www.linkedin.com/in/liaojamie">
+      <img src="views/images/linkedin.png"/>
+    </a>
   </div>
 
-  <!-- Projects -- >
-  <div class="about" id="projects">
+  <!-- Projects -->
+  <div class="projects" id="projects">
+    <h1>Projects</h1>
     <p>THIS IS PROJECTS</p>
+    <a href="https://www.github.com/iaora">
+      <img src="views/images/GitHub-Mark.png"/>
+    </a>
 
   </div>
 
   <!-- Experience -->
-  <div class="about" id="experience">
+  <div class="experience" id="experience">
+    <h1>Experience</h1>
     <p>THIS IS EXPERIENCE</p>
     
   </div>
