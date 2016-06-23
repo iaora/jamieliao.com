@@ -53,7 +53,7 @@ body {
   border-bottom-left-radius:15px;
 }
 
-li a {
+.bar li a {
   display: block;
   color: #000;
   padding: 16px 0 16px 16px;
@@ -61,7 +61,7 @@ li a {
 }
 
 /* Change the link color on hover */
-li a:hover {
+.bar li a:hover {
   background-color: #78B1C4;
   color: white;
   text-decoration: none;
