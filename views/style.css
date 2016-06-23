@@ -4,11 +4,36 @@
 }
 
 p,h1,ul, .frontabout, .frontprojects, .frontexperience, .frontresume, .about, .projects, .experience{
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: 'Concert One', serif;
 }
 
-body { 
-  background-size:cover;
+body {
+  font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+   background: #95AB9D url(images/background.png) repeat top left;
+}
+
+.row{
+  font-color: #FFFFFF;
+  list-style:none;
+  font-size: 25px;
+  margin:0;
+  padding: 10px;
+  text-align:center;
+  text-decoration: none;
+}
+
+.row li, .row a{
+  display:inline;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding:10px;
+}
+
+.row li a:hover {
+  background-color: #78B1C4;
+  color: white;
+  padding:10px;
+  text-decoration: none;
 }
 
 .bar{
@@ -16,21 +41,22 @@ body {
   z-index: 900;
 }
 
-ul {
+.bar ul {
   display: block;
   list-style-type: none;
   padding: 8px 0 8px 16px;
-  text-decoration: none;
-  background-color: #f1f1f1;
+  background-color: #DBEFF6;
   width: 200px;
   float: right;
   font-size: 20px;
+  border-top-left-radius:15px;
+  border-bottom-left-radius:15px;
 }
 
 li a {
   display: block;
   color: #000;
-  padding: 8px 0 8px 16px;
+  padding: 16px 0 16px 16px;
   text-decoration: none;
 }
 
@@ -38,18 +64,50 @@ li a {
 li a:hover {
   background-color: #78B1C4;
   color: white;
+  text-decoration: none;
+  border-top-left-radius:15px;
+  border-bottom-left-radius:15px;
 }
 
 /* Front Page */
 
-.name h1{
+.image-cropper {
+  width: 450px;
+  height: 450px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.name, .schooltitle{
+  font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
   display:: inline;
   text-align: center;
-  font-size: 100px !important;
-  margin-top: 250px;
-  margin-bottom: 75px;
+  font-size: 100px;
+  color: #317389;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1), 0 0 1px #317389;
+  margin-top: 2%;
   width: 100%;
-  color: #FFFFFF;  /*78B1C4;*/
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.schooltitle{
+  margin-top: 10px;
+  font-size: 60px !important;
 }
 
 .btn btn-lg btn-default:hover{
@@ -64,19 +122,19 @@ li a:hover {
 .about, .projects, .experience{
   display: none;
   padding-left: 50px;
-  padding-top: 5px;
+  padding-top: 0px;
   font-size: 20px;
   width: 75%;
 }
 .about h1, .projects h1, .experience h1{
-  font-size: 60px;
-  color: #78B1C4;
-  width: 25%;
+  font-size: 100px;
+  color: #317389;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1), 0 0 1px #317389;
+  width: 50%;
+  margin-bottom: 50px;
+  font-family: 'Concert One', serif;
 }
 
-.about h1, .about p, .projects p, .projects h1, .experience h1, .experience p{
-  background-color: #F6F6F6;
-}
 
 .about img{
   width: 4%;

@@ -1,18 +1,24 @@
 $(document).ready(function(){
 
   if (location.hash == ''){
-    $('#name').addClass('animated fadeInLeft');
+    $('#name').addClass('animated fadeIn').arctext({radius: 300});
+    $('#image-cropper').addClass('animated fadeIn');
+    $('#schooltitle').addClass('animated fadeIn').arctext({radius: 300, dir: -1});
     $('#frontabout').addClass('animated fadeInUp');
     $('#frontprojects').addClass('animated fadeInUp');
     $('#frontexperience').addClass('animated fadeInUp');
     $('#frontresume').addClass('animated fadeInUp');
   }else{
     $('#name').hide();
+    $('#schooltitle').hide();
+    $('#image-cropper').hide();
+    $('#row').hide();
     $('#frontabout').hide();
     $('#frontprojects').hide();
     $('#frontexperience').hide();
     $('#frontresume').hide();
     $('#bar').css('display', 'block');
+
   }
 
   if(location.hash == "#about"){
@@ -58,9 +64,13 @@ $(document).ready(function(){
 });
   
 function moveMain(){
-    $('#name').removeClass('fadeInLeft').addClass('animated fadeOutRight');
+    $('#name').removeClass('fadeIn').addClass('animated fadeOut');
+    $('#schooltitle').removeClass('fadeIn').addClass('animated fadeOut');
+    $('#image-cropper').removeClass('fadeIn').addClass('animated fadeOut');
     $('#row').addClass('animated fadeOutDown');
     $('#name').hide();
+    $('#schooltitle').hide();
+    $('#image-cropper').hide();
     $('#row').hide();
     //$('#frontprojects').addClass('animated fadeOutDown');
     //$('#frontexperience').addClass('animated fadeOutDown');

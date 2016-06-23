@@ -4,32 +4,48 @@
   <link rel="stylesheet" href="views/css/animate.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="views/js/scripts.js"></script>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   <script type="text/javascript" src="http://tympanus.net/Development/Arctext/js/jquery.arctext.js"></script>
+  <!-- Latest compiled and minified CSS 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+  <link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
 </head>
 
-<div class="bar" id="bar">
-  <div id="navbar">
-    <ul>
-      <li><a href="#about" class="btnActive" onClick="loadAbout();">About</a></li>
-      <li><a href="#projects" class="btnActive" onClick="loadProjects();">Projects</a></li>
-      <li><a href="#experience" class="btnActive" onClick="loadExperience();">Experience</a></li>
-      <li><a href="views/resume.pdf">Resume</a></li>
-    </ul>
-  </div>
-</div>
 
 <!-- Home Page -->
-<body data-spy="scroll" data-target="#navbar" background="views/images/background.png">
-  <div class="name" id="name">
-    <h1>Jamie Liao</h1>
+<body data-target="#navbar" >
+
+  <ul class="row" id="row" style="margin-top: 2%;">
+    <li><a href="#about" id="frontabout" onClick="moveMain(); loadAbout();" >About</a></li>
+    <li><a href="#projects" id="frontprojects" onClick="moveMain(); loadProjects();" >Projects</a></li>
+    <li><a href="#experience" id="frontexperience"onClick="moveMain(); loadExperience();" >Experience</a></li>
+    <li><a href="views/resume.pdf" id="frontresume" >Resume</a></li>
+  </ul>
+  
+  <div class="name" id="name">Jamie Liao</div>
+  <div class="image-cropper" id="image-cropper">
+      <img src="views/images/me.jpg" class="rounded" />
   </div>
-  <div class="row" id="row">
-    <a href="#about" class="btn btn-lg btn-default" id="frontabout" onClick="moveMain(); loadAbout();" style="margin-left: 33%;">About</a>
-    <a href="#projects" class="btn btn-lg btn-default" id="frontprojects"  onClick="moveMain(); loadProjects();" style="margin-left: 75px;">Projects</a>
-    <a href="#experience" class="btn btn-lg btn-default" id="frontexperience"onClick="moveMain(); loadExperience();" style="margin-left: 75px; margin-right: 75px;">Experience</a>
-    <a href="views/resume.pdf" class="btn btn-lg btn-default" id="frontresume" >Resume</a>
+  <div class="schooltitle" id="schooltitle">Rutgers University</div>
+
+   <script>
+      $().ready(function() {
+        $('#name').arctext({radius: 300});
+      });
+  </script>
+
+<!-- Rest of Pages -->
+
+  <div class="bar" id="bar">
+    <div id="navbar">
+      <ul>
+        <li><a href="#about" class="btnActive" onClick="loadAbout();">About</a></li>
+        <li><a href="#projects" class="btnActive" onClick="loadProjects();">Projects</a></li>
+        <li><a href="#experience" class="btnActive" onClick="loadExperience();">Experience</a></li>
+        <li><a href="views/resume.pdf">Resume</a></li>
+      </ul>
+    </div>
   </div>
+
   
   <!-- About -->
   <div class="about" id="about">
