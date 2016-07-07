@@ -1,13 +1,8 @@
 <!-- Header -->
 <head>
   <link href="views/style.css" rel="stylesheet">
-  <!-- Rotating Words -->
   <link href="views/css/span.css" rel="stylesheet">
-  <!-- Project hover effect -->
   <link href="views/css/hover.css" rel="stylesheet">
-  <!-- Front page hover -->
-  <link href="views/css/set1.css" rel="stylesheet">
-
   <link rel="stylesheet" href="views/css/animate.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="views/js/scripts.js"></script>
@@ -18,46 +13,16 @@
 </head>
 
 
-<!-- Front Page -->
+<!-- Home Page -->
 <body data-target="#navbar" >
 
-  <div class="row" id="row" >
+  <ul class="row" id="row" >
+    <li><a href="#about" id="frontabout" onClick="moveMain(); loadAbout();" >About</a></li>
+    <li><a href="#projects" id="frontprojects" onClick="moveMain(); loadProjects();" >Projects</a></li>
+    <li><a href="#experience" id="frontexperience"onClick="moveMain(); loadExperience();" >Experience</a></li>
+    <li><a href="views/resume.pdf" id="frontresume" >Resume</a></li>
+  </ul>
 
-    <figure class="effect-sadie">
-        <a href="#about" id="frontabout" onClick="moveMain(); loadAbout();" >
-          <figcaption>
-            <h2>About me!</h2>
-            <p>Hello there :)</p>
-          </figcaption>
-        </a>
-    </figure>
-    <figure class="effect-sadie">
-        <a href="#projects" id="frontprojects" onClick="moveMain(); loadProjects();" ></a>
-          <figcaption>
-            <h2>Projects!</h2>
-            <p>Hello there :)</p>
-          </figcaption>
-        </a>
-    </figure>
-    <figure class="effect-sadie">
-        <a href="#experience" id="frontexperience"onClick="moveMain(); loadExperience();" ></a>
-          <figcaption>
-            <h2>Experience!</h2>
-            <p>Hello there :)</p>
-          </figcaption>
-        </a>
-    </figure>
-    <figure class="effect-sadie">
-        <a href="views/resume.pdf" id="frontresume" ></a>
-          <figcaption>
-            <h2>Resume!</h2>
-            <p>Hello there :)</p>
-          </figcaption>
-        </a>
-    </figure>
-  </div>
-
-<!--
   <div class="name" id="name">Jamie Liao</div>
   <div class="image-cropper" id="image-cropper">
       <img src="views/images/me.jpg" class="rounded" />
@@ -70,7 +35,6 @@
       });
   </script>
 
--->
   <!-- Rest of Pages -->
 
   <div class="bar" id="bar">

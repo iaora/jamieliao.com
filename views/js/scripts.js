@@ -13,6 +13,7 @@ $(document).ready(function(){
     $('#schooltitle').hide();
     $('#image-cropper').hide();
     $('#row').hide();
+    $('#hr').hide();
     $('#frontabout').hide();
     $('#frontprojects').hide();
     $('#frontexperience').hide();
@@ -72,6 +73,7 @@ function moveMain(){
     $('#schooltitle').hide();
     $('#image-cropper').hide();
     $('#row').hide();
+    $('#hr').hide();
     //$('#frontprojects').addClass('animated fadeOutDown');
     //$('#frontexperience').addClass('animated fadeOutDown');
     //$('#frontresume').addClass('animated fadeOutDown');
