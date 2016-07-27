@@ -12,7 +12,7 @@ $(document).ready(function(){
     $('#name').hide();
     $('#schooltitle').hide();
     $('#image-cropper').hide();
-    $('#row').hide();
+    $('#row-front').hide();
     $('#hr').hide();
     $('#frontabout').hide();
     $('#frontprojects').hide();
@@ -68,7 +68,7 @@ function moveMain(){
     $('#name').removeClass('fadeIn').addClass('animated fadeOut');
     $('#schooltitle').removeClass('fadeIn').addClass('animated fadeOut');
     $('#image-cropper').removeClass('fadeIn').addClass('animated fadeOut');
-    $('#row').addClass('animated fadeOutDown');
+    $('#row-front').addClass('animated fadeOutDown');
     $('#name').hide();
     $('#schooltitle').hide();
     $('#image-cropper').hide();
@@ -85,7 +85,7 @@ function moveMain(){
     
     setTimeout(function(){
       $('#name').css('display', 'none');
-      $('#row').css('display', 'none');
+      $('#row-front').css('display', 'none');
     }, 700);
 };
 

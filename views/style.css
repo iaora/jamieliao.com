@@ -3,9 +3,6 @@
   src: url(sansation_light.woff);
 }
 
-p,h1,ul, .frontabout, .frontprojects, .frontexperience, .frontresume, .about, .projects, .experience{
-  font-family: 'Concert One', serif;
-}
 html, body, figure, figcaption{
   margin: 0 !important;
   padding: 0 !important;
@@ -16,11 +13,22 @@ figcaption{
   width: 100%;
 }
 
+body{
+  background: url("images/cup.jpg") 0 0 no-repeat fixed;
+  background-size: cover;
+}
+
+.contain{
+  padding-bottom: 50px !important;
+  background-color: #EFEFEF;
+  opacity: 0.95;
+}
+
 body {
   font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif !important;
 }
 
-.row{
+.row-front{
   margin: 0;
   padding: 0;
   background: url("images/cup.jpg");
@@ -33,7 +41,7 @@ body {
   overflow: hidden;
 }
 
-.row img{
+.row-front img{
   z-index: 0;
   margin: 0 !important;
   height: 100%;
@@ -43,13 +51,13 @@ body {
 
 }
 
-
+/*
 .bar{
   display: none;
   z-index: 900;
 }
 
-.bar ul {
+.bar, .bar ul{
   display: block;
   list-style-type: none;
   padding: 8px 0 8px 16px;
@@ -68,15 +76,21 @@ body {
   text-decoration: none;
 }
 
-/* Change the link color on hover */
+
 .bar li a:hover {
   background-color: #78B1C4;
   color: white;
   text-decoration: none;
-  padding-bottom: 20px;
   border-top-left-radius:15px;
   border-bottom-left-radius:15px;
 }
+*/
+.icons{
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
 
 /* Front Page */
 
@@ -93,6 +107,27 @@ body {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
+
+.fa:hover, .btn:hover{
+  color:#fff !important;
+
+}
+
+.fa{
+  border-right-width: 0px !important;
+}
+
+.btn-social-icon{
+  margin-top: 8px;
+  margin-left: 5px !important;
+  border: none;
+}
+
+.fa:hover{
+  color: #000 !important;
+}
+
+.btn-social-icon{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;height:34px;width:34px;padding:0}.btn-social-icon>:first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
 
 img {
   display: inline;
@@ -119,26 +154,15 @@ img {
   font-size: 60px !important;
 }
 
-.btn btn-lg btn-default:hover{
-  padding: 8px 0 8px 16px;
-  background-color: #78B1C4 !important;
-  color: white;
-  width: 10%;
-}
 
 .about, .projects, .experience{
   display: none;
-  padding-left: 50px;
-  padding-top: 0px;
   font-size: 20px;
-  width: 75%;
 }
 .about h1, .projects h1, .experience h1{
   font-size: 100px;
   color: #317389;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.1), 0 0 1px #317389;
-  width: 75%;
-  margin-bottom: 50px;
   font-family: 'Concert One', serif;
 }
 
@@ -159,4 +183,36 @@ img {
 
 .experience{
   display: none;
+}
+
+.title-experience{
+  padding-bottom: 15px;
+  
+}
+
+.title-jobs{
+  border-bottom: 1px black solid;
+  color: #7CB4B7;
+  margin-bottom: 45px;
+}
+
+.title-jobs h2{
+  font-size: 40px;
+}
+
+.exp-row h2{
+  font-size: 40px;
+  color: #57769E;
+}
+
+.exp-row{
+  height: 200px;
+}
+
+.exp-row a{
+  padding-bottom: 10px;
+}
+
+.exp-row a:hover{
+  text-decoration: none;
 }

@@ -7,13 +7,15 @@
   <link href="views/css/hover.css" rel="stylesheet">
   <!-- Front page hover -->
   <link href="views/css/set1.css" rel="stylesheet">
+  <!-- Bootstrap buttons -->
+  <link href="views/css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="views/css/animate.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="views/js/scripts.js"></script>
    <script type="text/javascript" src="http://tympanus.net/Development/Arctext/js/jquery.arctext.js"></script>
-  <!-- Latest compiled and minified CSS
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+   <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
 </head>
 
@@ -21,7 +23,7 @@
 <!-- Front Page -->
 <body data-target="#navbar" >
 
-  <div class="row" id="row" >
+  <div class="row-front" id="row-front" >
 
     <figure class="effect-sadie">
         <a href="#about" id="frontabout" onClick="moveMain(); loadAbout();" >
@@ -73,73 +75,167 @@
 -->
   <!-- Rest of Pages -->
 
-  <div class="bar" id="bar">
-    <div id="navbar">
-      <ul>
-        <li><a href="#about" class="btnActive" onClick="loadAbout();">About</a></li>
-        <li><a href="#projects" class="btnActive" onClick="loadProjects();">Projects</a></li>
-        <li><a href="#experience" class="btnActive" onClick="loadExperience();">Experience</a></li>
-        <li><a href="views/resume.pdf">Resume</a></li>
-      </ul>
-    </div>
-  </div>
+  <div class="bar navbar navbar-default navbar-fixed-top" id="bar">
+    <div class="container" id="navbar">
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#about" class="btnActive" onClick="loadAbout();"><span class="fa fa-info"></span> About</a></li>
+          <li><a href="#projects" class="btnActive" onClick="loadProjects();">
+              <span class="fa  fa-terminal"></span> Projects
+          </a></li>
+          <li><a href="#experience" class="btnActive" onClick="loadExperience();"><span class="fa fa-users"></span> Experience</a></li>
+          <li><a href="views/resume.pdf" target="_blank"><span class="fa fa-file-text"></span> Resume</a></li>
+        </ul>
+        <div class="navbar-default navbar-nav navbar-right icons" id="icons">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.linkedin.com/in/liaojamie"class="btn btn-social-icon btn-linkedin">
+              <span class="fa fa-linkedin"></span>
+            </a></li>
+            <li><a href="https://www.github.com/iaora"class="btn btn-social-icon btn-github">
+              <span class="fa fa-github"></span>
+            </a></li>
+            <li><a class="btn btn-social-icon bord" href="mailto:j.liao5079@gmail.com?" target="_top">
+              <span class="fa fa-envelope"></span>
+            </a></li>
+          </u>
 
-
-  <!-- About -->
-  <div class="about" id="about">
-    <h1>About Me</h1>
-    <p>Hi! My name is Jamie Liao and I'm currently a junior at Rutgers University-New Brunswick studying Computer Science.</p>
-    <a href="https://www.linkedin.com/in/liaojamie">
-      <img src="views/images/linkedin.png"/>
-    </a>
-  </div>
-
-  <!-- Projects -->
-  <div class="projects" id="projects">
-    <h1>Projects</h1>
-    <p>THIS IS PROJECTS</p>
-    <!-- Project 1 -->
-    <div class="hovereffect">
-      <img class="img-responsive" src="views/images/me.jpg" alt="">
-      <div class="overlay">
-        <h2>Reddit Clone</h2>
-        <p>blah blah blah</p>
-        <p><a href="#">LINK HERE</a></p>
-      </div>
-    </div>
-    <!-- Project 2 -->
-    <div class="hovereffect">
-      <img class="img-responsive" src="http://crossingzebras.com/wp-content/uploads/2015/12/Reddit-Black-Out-Private.jpg" alt="">
-      <div class="overlay">
-        <h2>Y86 Emulator</h2>
-        <p>blah blah blah</p>
-        <p><a href="#">LINK HERE</a></p>
-      </div>
-    </div>
-
-
-
-    <a href="https://www.github.com/iaora">
-      <img src="views/images/GitHub-Mark.png"/>
-    </a>
-
-  </div>
-
-  <!-- Experience -->
-  <div class="experience" id="experience">
-    <section class="rw-wrapper">
-      <h1 class="rw-sentence">
-        Experience in
-        <div class="rw-words rw-words-1">
-          <span>jobs</span>
-          <span>clubs</span>
-          <span>volunteering</span>
         </div>
-      </h1>
-    </section>
+      </div>
 
-    <p>THIS IS EXPERIENCE</p>
-
+    </div>
   </div>
+
+  <div class="container contain">
+    <!-- About -->
+    <div class="about" id="about">
+      <h1>About Me</h1>
+      <p>Hi! My name is Jamie Liao and I'm currently a junior at Rutgers University-New Brunswick studying Computer Science.</p>
+
+
+    </div>
+
+    <!-- Projects -->
+    <div class="projects" id="projects">
+      <h1>Projects</h1>
+      <p>THIS IS PROJECTS</p>
+      <!-- Project 1 -->
+      <div class="hovereffect">
+        <img class="img-responsive" src="views/images/me.jpg" alt="">
+        <div class="overlay">
+          <h2>Y86 Emulator</h2>
+          <p style="font-size: 16px;">Computer Architecture assignment: <br>CPU emulator using Y86 assembly instructions in C.</p>
+          <p><a href="#">LINK</a></p>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="hovereffect">
+        <img class="img-responsive" src="" alt="">
+        <div class="overlay">
+          <h2>Reddit Clone</h2>
+          <p style="font-size: 16px;">Mock reddit website built using Python Flask and SQL. Supports users, posts, comments, and likes.</p>
+          <p><a href="https://github.com/iaora/reddit">LINK</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="experience" id="experience" style="margin-top: 20px;">
+        <h1 class=" title-experience">
+          Experience
+          <!-- 
+          <div class="rw-words rw-words-1">
+            <span>jobs</span>
+            <span>clubs</span>
+          </div>
+          -->
+        </h1>
+      <!-- Jobs -->
+      <div class="title-jobs">
+        <h2><b>Jobs</b></h2>
+      </div>
+      <div class="exp-row">
+        <div class="col-md-4">
+          <h2>Learning Assistant</h2>
+          <p>September 2016 - Present</p>
+          <a href="https://rlc.rutgers.edu/student-info/group-and-individual-academic-support/learning-assistant-program" target="_blank">
+              <span class="fa fa-search"></span> LA Program
+          </a>
+        </div>
+        <div class="col-md-8">
+          <p>I teach two sections of <font color="FF0000">Introduction to Computer Science</font> recition. I help students to better understand certain topics they might have trouble with like Object Oriented Programming, arrays, recursion. I offer my time outside of class to introduce my students to various resources on campus. Immersing students who have just started their computer science career is extremely important.</p>
+        </div>
+      </div>
+      <div class="exp-row">
+        <div class="col-md-4">
+          <h2>iLab Assistant</h2>
+          <p>May 2016 - Present</p>
+          <a href="https://www.cs.rutgers.edu/resources/rooms_and_equipment/cave/" target="_blank">
+              <span class="fa fa-search"></span> iLab Assistant & CAVE
+          </a>
+        </div>
+        <div class="col-md-8">
+          <p><font color="FF0000">Walk-in tutoring</font> services at the Rutgers CAVE to mainly Introduction to Computer Science and Data Structures students. We go through algorithms, answer questions, and clarify concepts (like linked lists, trees, stacks, queues) to students. We also maintain 3 different computer labs that all CS students must utilize to build their school projects on.</p>
+        </div>
+      </div>
+      <div class="exp-row">
+        <div class="col-md-4">
+          <h2>Rutgers Writing Center Tutor</h2>
+          <p>September 2015-December 2016</p>
+          <a href="http://plangere.rutgers.edu/tutoring/about" target="_blank">
+              <span class="fa fa-search"></span> Plangere Writing Center
+          </a>
+        </div>
+        <div class="col-md-8">
+          <p>Work with two students during 80-minute sessions going over their essay ideas, idea flow, thesis writing, and organization. I utilized various teaching and brainstorm methods(e.g. reverse outlining, talking aloud) to help my students connect various texts. Similar to coding a program, essay writing requires prior planning to ensure quality and insightful sentences.</p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <!-- Clubs -->
+      <div class="title-jobs">
+        <h2><b>Leadership</b></h2>
+      </div>
+      <div class="exp-row">
+        <div class="col-md-4">
+          <h2>RU Tech Meetup</h2>
+          <p>July 2016 - Present</p>
+        </div>
+        <div class="col-md-8">
+          <font color="4A77A3"><p style="text-align: right;">Director of Finance</p></font>
+          <p>Reviving RU Tech Meetup, <font color="FF0000">an event for students to present their projects to companies and other peers.</font> Recruite companies like Google to give a talk, judge, or sponsor this event. Create a detailed budget for the event and ensure all efforts going toward this event are documented appropriately.</p>
+        </div>
+      </div>
+
+      <div class="exp-row" style="margin-bottom: 120px;">
+        <div class="col-md-4">
+          <h2>Rutgers USACS</h2>
+          <p>April 2016 - Present</p>
+          <a href="http://usacs.rutgers.edu/" target="_blank">
+              <span class="fa fa-search"></span> USACS
+          </a>
+        </div>
+        <div class="col-md-8">
+          <font color="4A77A3"><p style="text-align: right;">Events Coordinator</p></font>
+          <p>I work with other students and companies to plan, organize, and ensure smooth operations of our yearly events for USACS, Rutgers' largest CS club. The main component is USACS' <font color="FF0000">Mentorship Program</font> that pairs upperclassmen with underclassmen, who wish to learn web development, mobile development, machine learning, etc.</p>
+          <p>We host weekly <font color="FF0000">Hacker Hour and HackNight</font> taught by students and alumni on topics not taught in class like HTML/CSS, git, text editors, and What Happens When You Type in "Google.com", machine learning, and quantum computing.</p>
+        </div>
+      </div>
+      <div class="exp-row">
+        <div class="col-md-4">
+          <h2>HackRU</h2>
+          <p>April 2016 - Present</p>
+          <a href="http://hackru.org/" target="_blank">
+              <span class="fa fa-search"></span> HackRU
+          </a>
+        </div>
+        <div class="col-md-8">
+          <font color="4A77A3"><p style="text-align: right;">Director of Finance</p></font>
+          <p>Lead a team to recruite and negotiate with sponsors for HackRU, a biannual event at Rutgers with <font color="FF0000">800</font> participants. Work together with a group of 15 directors to create the event's budget while overlooking expenses to guarantee enough money is acquired to cover the event's expenses. Become day-of point of contact for sponsors during the event to ensure companies have what they need.</p>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- Container -->
 
 </body>

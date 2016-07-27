@@ -24,6 +24,7 @@
 	-ms-animation: rotateWord 9s linear infinite 0s;
 	animation: rotateWord 9s linear infinite 0s;
   margin-left: 37px;
+  font-size: 100px;
 }
 .rw-words-1 span:nth-child(2) { 
     -webkit-animation-delay: 3s; 
