@@ -1,25 +1,28 @@
 $(document).ready(function(){
 
   if (location.hash == ''){
-    $('#name').addClass('animated fadeIn').arctext({radius: 300});
-    $('#image-cropper').addClass('animated fadeIn');
-    $('#schooltitle').addClass('animated fadeIn').arctext({radius: 300, dir: -1});
-    $('#frontabout').addClass('animated fadeInUp');
-    $('#frontprojects').addClass('animated fadeInUp');
-    $('#frontexperience').addClass('animated fadeInUp');
-    $('#frontresume').addClass('animated fadeInUp');
-  }else{
-    $('#name').hide();
-    $('#schooltitle').hide();
-    $('#image-cropper').hide();
-    $('#row-front').hide();
-    $('#hr').hide();
-    $('#frontabout').hide();
-    $('#frontprojects').hide();
-    $('#frontexperience').hide();
-    $('#frontresume').hide();
-    $('#bar').css('display', 'block');
+    $('#front-name').hide();
+    $('#front-button').hide();
+    $('#about').hide();
+    $('#projects').hide();
+    $('#experience').hide();
 
+    $('#bar').hide();
+    $('#menu').hide();
+
+    setTimeout(function(){
+      $('#front-name').show();
+      $('#front-name').addClass('animated fadeIn');
+    }, 500);
+    setTimeout(function(){
+      $('#front-button').show();
+      $('#front-button').addClass('animated fadeIn');
+    }, 1000);
+
+  }else{
+    $('#frontcontent').hide();
+    $('#row-front').hide();
+    $('#bar').css('display', 'block');
   }
 
   if(location.hash == "#about"){
@@ -65,15 +68,8 @@ $(document).ready(function(){
 });
   
 function moveMain(){
-    $('#name').removeClass('fadeIn').addClass('animated fadeOut');
-    $('#schooltitle').removeClass('fadeIn').addClass('animated fadeOut');
-    $('#image-cropper').removeClass('fadeIn').addClass('animated fadeOut');
+    $('#frontcontent').removeClass('fadeIn').addClass('animated fadeOut');
     $('#row-front').addClass('animated fadeOutDown');
-    $('#name').hide();
-    $('#schooltitle').hide();
-    $('#image-cropper').hide();
-    $('#row').hide();
-    $('#hr').hide();
     //$('#frontprojects').addClass('animated fadeOutDown');
     //$('#frontexperience').addClass('animated fadeOutDown');
     //$('#frontresume').addClass('animated fadeOutDown');
@@ -84,9 +80,10 @@ function moveMain(){
     }, 0);
     
     setTimeout(function(){
-      $('#name').css('display', 'none');
+      $('#front-name').css('display', 'none');
+      $('#front-button').css('display', 'none');
       $('#row-front').css('display', 'none');
-    }, 700);
+    }, 300);
 };
 
 
@@ -101,7 +98,7 @@ function loadAbout(){
 };
 
 function hideAbout(){
-    $('#about').removeClass('fadeIn').addClass('fadeOut');
+  $('#about').removeClass('fadeIn').addClass('fadeOut');
   setTimeout(function() {
     $('#about').hide();
   }, 500);

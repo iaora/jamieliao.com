@@ -51,40 +51,7 @@ body {
 
 }
 
-/*
-.bar{
-  display: none;
-  z-index: 900;
-}
 
-.bar, .bar ul{
-  display: block;
-  list-style-type: none;
-  padding: 8px 0 8px 16px;
-  background-color: #DBEFF6;
-  width: 200px;
-  float: right;
-  font-size: 20px;
-  border-top-left-radius:15px;
-  border-bottom-left-radius:15px;
-}
-
-.bar li a {
-  display: block;
-  color: #000;
-  padding: 16px 0 16px 16px;
-  text-decoration: none;
-}
-
-
-.bar li a:hover {
-  background-color: #78B1C4;
-  color: white;
-  text-decoration: none;
-  border-top-left-radius:15px;
-  border-bottom-left-radius:15px;
-}
-*/
 .icons{
   display: block;
   margin: auto;
@@ -94,18 +61,25 @@ body {
 
 /* Front Page */
 
-.image-cropper {
-  width: 450px;
-  height: 450px;
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
+.frontcontent{
+  margin-top: 20%;
+  text-align: center;
+}
+
+.frontcontent h1{
+  color: #fff;
+  font-size: 100px;
+}
+.frontbtn {
+  background: none !important;
+  padding: 12px 22px !important;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.frontbtn: hover{
+  color: #000;
+  background-color: #000;
 }
 
 .fa:hover, .btn:hover{
@@ -136,23 +110,6 @@ img {
   width: auto;
 }
 
-.name, .schooltitle{
-  font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
-  display:: inline;
-  text-align: center;
-  font-size: 100px;
-  color: #317389;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.1), 0 0 1px #317389;
-  margin-top: 2%;
-  width: 100%;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
-
-.schooltitle{
-  margin-top: 10px;
-  font-size: 60px !important;
-}
 
 
 .about, .projects, .experience{

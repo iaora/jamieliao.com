@@ -22,57 +22,18 @@
 
 <!-- Front Page -->
 <body data-target="#navbar" >
-
-  <div class="row-front" id="row-front" >
-
-    <figure class="effect-sadie">
-        <a href="#about" id="frontabout" onClick="moveMain(); loadAbout();" >
-          <figcaption>
-            <h2>About me!</h2>
-            <p>Hello there :)</p>
-          </figcaption>
-        </a>
-    </figure>
-    <figure class="effect-sadie">
-        <a href="#projects" id="frontprojects" onClick="moveMain(); loadProjects();" ></a>
-          <figcaption>
-            <h2>Projects!</h2>
-            <p>Hello there :)</p>
-          </figcaption>
-        </a>
-    </figure>
-    <figure class="effect-sadie">
-        <a href="#experience" id="frontexperience"onClick="moveMain(); loadExperience();" ></a>
-          <figcaption>
-            <h2>Experience!</h2>
-            <p>Hello there :)</p>
-          </figcaption>
-        </a>
-    </figure>
-    <figure class="effect-sadie">
-        <a href="views/resume.pdf" id="frontresume" ></a>
-          <figcaption>
-            <h2>Resume!</h2>
-            <p>Hello there :)</p>
-          </figcaption>
-        </a>
-    </figure>
+  
+  <div class="frontpage">
+    <div class="frontcontent" id="frontcontent">
+      <h1 id="front-name">Jamie Liao</h1>
+      <br><br>
+      <a href="#about" id="front-button" onClick="moveMain(); loadAbout();" >
+        <button type="button" class="frontbtn">Enter</button>
+      </a>
+    </div>
   </div>
 
-<!--
-  <div class="name" id="name">Jamie Liao</div>
-  <div class="image-cropper" id="image-cropper">
-      <img src="views/images/me.jpg" class="rounded" />
-  </div>
-  <div class="schooltitle" id="schooltitle">Rutgers University</div>
 
-   <script>
-      $().ready(function() {
-        $('#name').arctext({radius: 300});
-      });
-  </script>
-
--->
   <!-- Rest of Pages -->
 
   <div class="bar navbar navbar-default navbar-fixed-top" id="bar">
@@ -105,7 +66,7 @@
     </div>
   </div>
 
-  <div class="container contain">
+  <div class="container contain" id="menu">
     <!-- About -->
     <div class="about" id="about">
       <h1>About Me</h1>
