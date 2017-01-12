@@ -8,7 +8,7 @@ body {
   height: 100%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
-  background-color: black;
+  background-color: #01010F !important;
 }
 html {
   width: 100%;
@@ -25,7 +25,7 @@ h6 {
   font-weight: 700;
   letter-spacing: 1px;
 }
-p {
+p, ul, li {
   margin: 0 0 25px;
   font-size: 18px;
   line-height: 1.5;
@@ -234,22 +234,37 @@ ul.banner-social-buttons {
   }
 }
 
+.experience-section{
+  margin-top: 5%;
+  padding: 50px 15px 50px 15px !important;
+  width: 100%;
+  color: white;
+  background: url(../img/experience-bg.jpg) no-repeat bottom center scroll;
+  background-attachment: fixed;
+  background-size: cover;
+  position: static !important;
+}
+
 .project-section{
-  padding-bottom: 50px;
+  margin-top: 5%;
+  padding: 50px 15px 50px 15px !important;
+  width: 100%;
+  color: white;
+  background: url(../img/project-bg.jpg) no-repeat bottom center scroll;
+  background-attachment: fixed;
+  background-size: cover;
+  position: static !important;
 }
 
 .project-section h2{
   color: #439187;
 }
 
-.project-section img{
-  max-width:100%;
-  max-height:100%;
-  object-fit: contain;
-}
+
 
 footer {
   padding-top: 2%;
+  background-color: black;
 }
 footer p {
   color: #fff; !important
@@ -273,4 +288,15 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.bot-marg{
+  margin-bottom: 2%;
+}
+
+.bot-marg img{
+  max-width:100%;
+  max-height:100%;
+  object-fit: contain;
 }
