@@ -7,30 +7,41 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  background-color: #01010F !important;
+  color: black;
+  background-color: white !important;
 }
 html {
   width: 100%;
   height: 100%;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   margin: 0 0 35px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+h2 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: black;
+}
+h3{
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  font-style: italic;
+  font-size: 90% !important;
 }
 p, ul, li {
   margin: 0 0 25px;
   font-size: 18px;
   line-height: 1.5;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #E8F3F1;
+  color: #3DABAF;
 }
 @media (min-width: 768px) {
   p {
@@ -59,7 +70,7 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: black;
+  background-color: grey;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -127,7 +138,6 @@ a:focus {
   text-align: center;
   color: white;
   background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-  background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -187,10 +197,7 @@ a:focus {
   margin-top: 5%;
   padding: 50px 0 50px 0;
   width: 100%;
-  color: white;
-  background: url(../img/about-bg.jpg) no-repeat bottom center scroll;
-  background-attachment: fixed;
-  background-size: cover;
+  color: black;
   position: static !important;
 }
 
@@ -238,7 +245,7 @@ ul.banner-social-buttons {
   margin-top: 5%;
   padding: 50px 15px 50px 15px !important;
   width: 100%;
-  color: white;
+  color: black;
   background: url(../img/experience-bg.jpg) no-repeat bottom center scroll;
   background-attachment: fixed;
   background-size: cover;
@@ -249,7 +256,7 @@ ul.banner-social-buttons {
   margin-top: 5%;
   padding: 50px 15px 50px 15px !important;
   width: 100%;
-  color: white;
+  color: black;
   background: url(../img/project-bg.jpg) no-repeat bottom center scroll;
   background-attachment: fixed;
   background-size: cover;
