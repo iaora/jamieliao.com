@@ -141,7 +141,7 @@ a:focus {
 .blog{
   background-color: black;
   width: 100%;
-  height: 100%;
+  height: auto;
   padding: 100px 0;
   background: url(../img/blog.jpg) no-repeat bottom center scroll;
   background-attachment: fixed;
