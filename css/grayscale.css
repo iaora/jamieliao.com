@@ -45,6 +45,7 @@ p, ul {
   color: #3DABAF;
 }
 li {
+  text-align: left;
   font-size: 18px;
   line-height: 1.5;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -285,6 +286,10 @@ ul.banner-social-buttons {
   background-attachment: fixed;
   background-size: cover;
   position: static !important;
+}
+
+.description{
+  text-align: left !important;
 }
 
 .project-section h2{
