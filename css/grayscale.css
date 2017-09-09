@@ -140,7 +140,7 @@ a:focus {
 }
 
 .blog{
-  background-color: white;
+  background-color: #B0C4DE;
   width: 100%;
   height: auto;
   padding: 100px 0;
@@ -149,7 +149,7 @@ a:focus {
 }
 
 .blog-section{
-  background-color: white;
+  background-color: #DCDCDC;
   padding: 3% 3% 3% 3%;
   margin-top: 5%;
 }
