@@ -140,17 +140,16 @@ a:focus {
 }
 
 .blog{
-  background-color: black;
+  background-color: white;
   width: 100%;
   height: auto;
   padding: 100px 0;
-  background: url(../img/blog.jpg) no-repeat bottom center scroll;
   background-attachment: fixed;
   background-size: cover;
 }
 
 .blog-section{
-  background-color: #4F4F4F;
+  background-color: white;
   padding: 3% 3% 3% 3%;
   margin-top: 5%;
 }
