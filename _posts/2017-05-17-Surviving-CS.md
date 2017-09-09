@@ -33,6 +33,7 @@ Even if you didn’t do too hot in the class (for example I barely got a B), don
 
 ## Build a project
 ![alt](http://www.codingdojo.com/blog/wp-content/uploads/Indeed-Job-Postings.jpg)
+
 Start following some guides/tutorials online that teach you how to make a web application or learn a new language. I would recommend starting with learning new languages like python! A lot of companies look for experience in python or Java!
 
 Make your personal site :) It will teach you how to use HTML/CSS/Javascript and other frameworks that can help you make your website look pretty. 
