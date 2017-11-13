@@ -1,1 +1,0 @@
-Not much has changed since the previous process log. I've continued to work on making sure that there are no fires in HackRU. I didn't realize how much work came with being the co-executive director of HackRU and it's a little overwhelming sometimes 
