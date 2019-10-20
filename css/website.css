@@ -1,0 +1,30 @@
+#profile{
+	height: auto;
+	max-width: 75%;
+	display: block ;
+	margin: auto;
+}
+
+#icons{
+	text-align: center;
+}
+
+#icons i{
+	font-size: 35px;
+	color: #5dc897;
+	padding-right: 5px;
+    padding-left: 5px;
+}
+
+#main{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.fa-flag:hover {
+    color: red;
+}
+
+h1 {
+	color: #5dc897;
+}
